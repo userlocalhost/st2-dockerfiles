@@ -27,6 +27,8 @@ RUN echo -e "#!/bin/sh\nexit 101\n" > /usr/sbin/policy-rc.d && \
     apt-get -y install gdebi-core sshpass cron \
       netcat net-tools
 
+RUN apt-get -y install locales
+
 ENV container docker
 
 # we can have ssh
